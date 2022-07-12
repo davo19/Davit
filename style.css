@@ -1,0 +1,202 @@
+* {
+    padding: 0;
+    margin: 0 ;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+
+}
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(229, 229, 229)
+
+}
+
+.game h1{
+    color: rgb(1,1,90)
+}
+.area .btnStart {
+    /* margin: 10rem auto; */
+    margin: 10rem 0 10rem 3rem;
+    padding: 1.2rem 2rem;
+    font-size: 1.2rem;
+    box-shadow: 0 .1.1 .3rem rgba(8, 0, 0, 0.7);
+    color: rgb(1,1,90);
+    border-radius: 1.2rem;
+    cursor: pointer;
+    background-image: linear-gradient(to right,
+    #314755 0%,
+    #26a0da 51%,
+    #314755 100%)
+
+}
+
+
+
+.area .btnStart:hover {
+    box-shadow: 0  -.3rem  .5rem rgba(190, 11, 11, 0.7);
+}
+
+.area .modal {
+    position: absolute;
+    top: -120%;
+    left: 0; right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    flex-direction: column;
+}
+
+label{
+    padding: .6rem;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: .2rem;
+    color: #fff;
+
+}
+
+.area .modal .active {
+    top: 0;
+    height: 100vh;
+}
+
+.modal input[type=text] {
+    width: 55px;
+    padding: .6rem;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 1.4rem;
+    border-radius: .8rem;
+    color: rgb(1, 1, 90);
+    border: .1rem solid rgb(1, 1, 90);
+}
+
+.modal input[type=submit]:hover{
+    box-shadow: 0 -.3rem grey
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    float: left;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    border: .1rem solid rgb(1, 1, 90);
+    font-size: 2.5rem;
+    text-align: center;
+    color: rgb(1, 1, 90)
+
+}
+.contron{
+    position: absolute;
+    bottom: 3rem;
+    left: 41%
+}
+.btn_restart,
+.btn_quit {
+    padding: .6rem 1.6rem;
+    font-size: 1.2rem;
+    margin: 0 .3rem;
+    box-shadow: 0 .1rem .2rem rgb(1, 1, 90);
+    color: #fff;
+    border-radius: 1.2rem;
+    cursor: pointer;
+    }
+
+
+
+    .btn_restart,
+    .btn_quit {
+        background-image: linear-gradient(to right,
+        #314755 0%,
+        #26a0da 51%,
+        #314755 100%);
+        }
+        
+    .btn_restart:hover,
+    .btn_quit:hover {
+        color: rgb(1, 1, 90);
+        box-shadow: 0 -.3rem .5rem rgba(255, 255, 255, .2);
+        };
+
+    .winner{
+        position: absolute;
+        top: -120%;
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .winner h2{
+        font-size: 2rem;
+        /* background: linear-gradient(#314755 0%, 
+                    #7fbfde 51%,    
+                    #314755 100%); */
+        padding: 1.8rem 2.2rem;
+        margin: 2rem;
+        border-radius: 1.2rem;
+        color: rgb(1, 1, 90);
+
+        
+    }
+
+
+    .winner.active {
+        top: 0;
+        height: 100vh;
+        }
+        
+        .fa-solid {
+        color: rgb(1, 1, 90);
+        }
+
+
+
+
+        @media (max-width: 1200px) {
+            .control {
+            left: 10%;
+            }
+            }
+            @media (max-width: 560px) {
+            .area .title {
+            font-size: 2, 4rem;
+            }
+            label {
+            margin-top: 5rem;
+            }
+            .control {
+            bottom: 1rem;
+            }
+            }
+
+
+
+            @media (max-width: 360px) {
+                .area .title {
+                font-size: 2rem;
+                }
+                
+                .area .btnStart {
+                font-size: 1rem;
+                padding: 1rem 1.8rem;
+                }
+                
+                }
+
+
+
+                
+
+
+
+
