@@ -17,8 +17,8 @@ const winnerText = document.querySelector('.winner h2')
 
 startBtn.addEventListener('click', openModal);
 newGameBtn.addEventListener('click', createBlock);
-// restartBtn.addEventListener('click', restartGame);
-// quitGame.addEventListener('click', gameQuit);
+restartBtn.addEventListener('click', restartGame);
+quitGame.addEventListener('click', gameQuit);
 controlBtn.style.display = 'none';
 
 
