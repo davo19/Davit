@@ -1,65 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" ;
-        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css";
+integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!DOCTYPE html>
-    <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>TIC TAC TOE</title>
+<div class="container">
+<div class="area">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-            integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="style.css">
-    </head>
+<div class="game">
+<h1 class="title">TIC TAC TOE GAME</h1>
 
-    <body>
+</div>
 
-        <div class="container">
-            <div class="area">
-                <div class="game">
-                    <h1 class="title">TIK TAK TOE GAME</h1>
-                </div>
-                <div>
-                    <button class="btnStart">NEW GAME</button>
-                </div>
-                <form class="modal">
-                    <label for="inputcell"> Choose a number between <br> 3 to 7</label>
-                    <input type="text" id="inputcell" class="inputcell">
-                    <input type="submit" value="Start Game" class="input_btn">
-                </form>
-            </div>
+<div>
+<button class="btnStart">NEW GAME</button>
+</div>
+
+<form class="modal">
+<label for="inputcell"> Choose a number between <br> 3 to 7</label>
+<input type="text" id="inputcell" class="inputcell">
+<input type="submit" value="Start Game" class="input_btn">
+</form>
+
+</div>
+
+<div class="winner">
+<h2> </h2>
+</div>
 
 
-            <div class="winner">
-                <h2> </h2>
-            </div>
+<div class="control">
+<button class="btn_restart"> <i class="fas fa-sync"></i> Restart </button>
+<button class="btn_quit"> <i class="fas fa-power-off"></i> Quit </button>
+</div>
 
-            <div class="control">
-                <button class="btn_restart"> <i class="fas fa-sync"></i> Restart </button>
-                <button class="btn_quit"> <i class="fas fa-power-off"></i> Quit </button>
-            </div>
 
-        </div>
-        <script src="script.js"></script>
-    </body>
+</div>
 
-    </html>
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
-
 </html>

@@ -158,7 +158,7 @@
     align-items: center;
     flex-direction: column;
     }
-    
+
     
     .winner h2 {
     font-size: 2rem;
@@ -191,6 +191,7 @@
     
     .control {
     bottom: 1rem;
+    justify-content: center;
     }
     }
     
@@ -201,8 +202,17 @@
     }
     
     .area .btnStart {
-    font-size: 1rem;
-    padding: 1rem 1.8rem;
+        font-size: 1rem;
+        padding: 1rem 1.8rem;
+    }
+    .control{
+        justify-content: center;
+        left: 20%;
     }
     
+    }
+
+    .winner.active {
+        top: 0;
+        height: 100px;
     }
