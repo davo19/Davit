@@ -147,25 +147,25 @@ function checkWinner() {
             }
         }
     }
-
-}
-
-var countX = 0, countY = 0;
-for (var j = 0; j < result.length; j++) {
-    if (result[j][result.length - 1 - j].innerHTML == 'X') {
-        countX++;
-        if (result.length == countX) {
-            winnerWindow.classList.add('active');
-            winnerText.innerHTML = ` <i class="fa-solid fa-trophy"></i> Winner is X `;
-        }
-    } else if (result[j][result.length - 1 - j].innerHTML == '0') {
-        countY++;
-        if (result.length == countY) {
-            winnerWindow.classList.add('active');
-            winnerText.innerHTML = ` <i class="fa-solid fa-trophy"></i> Winner is 0 `;
+    var countX = 0, countY = 0;
+    for (var j = 0; j < result.length; j++) {
+        if (result[j][result.length - 1 - j].innerHTML == 'X') {
+            countX++;
+            if (result.length == countX) {
+                winnerWindow.classList.add('active');
+                winnerText.innerHTML = ` <i class="fa-solid fa-trophy"></i> Winner is X `;
+            }
+        } else if (result[j][result.length - 1 - j].innerHTML == '0') {
+            countY++;
+            if (result.length == countY) {
+                winnerWindow.classList.add('active');
+                winnerText.innerHTML = ` <i class="fa-solid fa-trophy"></i> Winner is 0 `;
+            }
         }
     }
 }
+
+
 function restartGame() {
     location.reload()
     }
@@ -174,6 +174,10 @@ function restartGame() {
     window.close()
     location.reload()
     }
+
+
+
+
 
 
 
